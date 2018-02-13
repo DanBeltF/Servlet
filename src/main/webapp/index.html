@@ -3,23 +3,23 @@
     <head>
         <title>Start Page</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-         <script>
-             function validateForm() {
-                 var x = document.forms["consulta"]["id"].value;
-                 if(isNaN(x) || x<0 || x>99999999){
-                     alert("Numero no valido"); 
-                     return false;
-                 }                    
-              }
-    </script>
-    </head>    
+        <script>
+            function validateForm() {
+                var x = document.forms["consulta"]["id"].value;
+                if (isNaN(x) || x < 0 || x > 99999999) {
+                    alert("Numero no valido");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+
     <body>        
-        <h1>Hello World!</h1>          
+        <h1>Consulta de Clientes Web</h1>          
         <form name="consulta" action = "clientes" onsubmit="return validateForm()" method = "POST">
-        Ingrese el documento: 
-        <input type="text" name="id"/>
-        <input type="submit" value="Consultar"/>
-    </form>        
-   
-</body>
+            Ingrese el documento: 
+            <input type="text" name="id"/>
+            <input type="submit" value="Consultar"/>
+        </form>       
+    </body>
 </html>

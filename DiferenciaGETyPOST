@@ -1,0 +1,8 @@
+Si se consulta un cliente dada la id, por ejemplo 1024:
+
+GET: la URL queda http://localhost:8080/clientes?id=1024
+POST: la URL queda http://localhost:8080/clientes
+
+Ademas, si estamos utilizando el metodo POST y copiamos la anterior
+URL obtenida en el metodo GET y la pegamos en la barra de
+direcciones del navegador, nos arrojara un cliente distinto.
